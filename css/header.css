@@ -1,0 +1,76 @@
+.header{
+    background-image: url("../img/swap/1.jpg") ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header h1{
+    color: #20dbd8;
+    font-size: 70px;
+
+}
+.header_content{
+    text-align: center;
+}
+
+.header_content p{
+    font-size: 23px;
+    color: #fffbf4;
+}
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.mouse {
+    width: 50px;
+    height: 90px;
+    border: 3px solid #fffbf4;
+    border-radius: 60px;
+    position: relative;
+}
+.mouse::before {
+     content: '';
+     width: 12px;
+     height: 12px;
+     position: absolute;
+     top: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #fffbf4;
+     border-radius: 50%;
+     opacity: 1;
+     animation: wheel 2s infinite;
+     -webkit-animation: wheel 2s infinite;
+ }
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+.header_scroll{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
